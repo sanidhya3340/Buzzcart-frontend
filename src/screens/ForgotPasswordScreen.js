@@ -17,7 +17,7 @@ export default function ForgotPasswordScreen() {
 
     try {
       const { data } = await axios.post(
-        "api/auth/forgotpassword",
+        "https://limitless-escarpment-77247.herokuapp.com/api/auth/forgotpassword",
         { email },
         config
       );

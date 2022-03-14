@@ -33,7 +33,10 @@ export default function HomeScreen({history}) {
       };
 
       try {
-        const { data } = await axios.get("/api/private", config);
+        const { data } = await axios.get(
+          "https://limitless-escarpment-77247.herokuapp.com/api/private",
+          config
+        );
         setPrivateData(data.data);
       } catch (error1) {
         localStorage.removeItem("authToken");
