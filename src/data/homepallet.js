@@ -26,7 +26,7 @@ const data = [
   },
   {
     img: "/images/furniture.png",
-    ref: "furniture",
+    goto: "furniture",
     name: "Furniture",
   },
 ];

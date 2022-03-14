@@ -36,7 +36,7 @@ export default function RegisterScreen({ history }) {
 
     try {
       const { data } = await axios.post(
-        "https://limitless-escarpment-77247.herokuapp.com/api/auth/register",
+        "/api/auth/register",
         { username, email, password },
         config
       );

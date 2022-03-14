@@ -30,7 +30,7 @@ const ResetPasswordScreen = ({  match }) => {
 
     try {
       const { data } = await axios.put(
-        `https://limitless-escarpment-77247.herokuapp.com/api/auth/passwordreset/${match.params.resetToken}`,
+        `/api/auth/passwordreset/${match.params.resetToken}`,
         {
           password,
         },
